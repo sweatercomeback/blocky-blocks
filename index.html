@@ -36,6 +36,9 @@
             $b.addClass("vertical")
           }
 
+      }).on("contextmenu", function(e){
+        e.preventDefault();
+         $(this).toggleClass("flip")
       });
     </script>
   </body>

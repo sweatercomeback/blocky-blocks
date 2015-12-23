@@ -6,18 +6,50 @@
 
 .block-group {
   position: absolute; }
+  .block-group.flip {
+    -moz-transform: scaleX(-1) rotate(0deg);
+    -o-transform: scaleX(-1) rotate(0deg);
+    -webkit-transform: scaleX(-1) rotate(0deg);
+    -ms-transform: scaleX(-1) rotate(0deg);
+    transform: scaleX(-1) rotate(0deg);
+    -ms-filter: "FlipH";
+    filter: FlipH; }
   .block-group.vertical {
     -webkit-transform: rotate(90deg);
     /* Chrome, Safari, Opera */
     transform: rotate(90deg); }
+    .block-group.vertical.flip {
+      -moz-transform: scaleX(-1) rotate(90deg);
+      -o-transform: scaleX(-1) rotate(90deg);
+      -webkit-transform: scaleX(-1) rotate(90deg);
+      -ms-transform: scaleX(-1) rotate(90deg);
+      transform: scaleX(-1) rotate(90deg);
+      -ms-filter: "FlipH";
+      filter: FlipH; }
   .block-group.inverse {
     -webkit-transform: rotate(180deg);
     /* Chrome, Safari, Opera */
     transform: rotate(180deg); }
+    .block-group.inverse.flip {
+      -moz-transform: scaleX(-1) rotate(180deg);
+      -o-transform: scaleX(-1) rotate(180deg);
+      -webkit-transform: scaleX(-1) rotate(180deg);
+      -ms-transform: scaleX(-1) rotate(180deg);
+      transform: scaleX(-1) rotate(180deg);
+      -ms-filter: "FlipH";
+      filter: FlipH; }
   .block-group.vinverse {
     -webkit-transform: rotate(270deg);
     /* Chrome, Safari, Opera */
     transform: rotate(270deg); }
+    .block-group.vinverse.flip {
+      -moz-transform: scaleX(-1) rotate(270deg);
+      -o-transform: scaleX(-1) rotate(270deg);
+      -webkit-transform: scaleX(-1) rotate(270deg);
+      -ms-transform: scaleX(-1) rotate(270deg);
+      transform: scaleX(-1) rotate(270deg);
+      -ms-filter: "FlipH";
+      filter: FlipH; }
 
 .blue .block {
   width: 200px;

@@ -23,6 +23,16 @@ $blue: blue;
   }
 }
 
+@mixin flip-it($rotate-degrees) {
+  -moz-transform: scaleX(-1) rotate($rotate-degrees);
+  -o-transform: scaleX(-1) rotate($rotate-degrees);
+  -webkit-transform: scaleX(-1) rotate($rotate-degrees);
+  -ms-transform: scaleX(-1) rotate($rotate-degrees);
+  transform: scaleX(-1) rotate($rotate-degrees);
+  -ms-filter: "FlipH";
+  filter: FlipH;
+}
+
 
 
 
@@ -37,21 +47,35 @@ $blue: blue;
 
 .block-group {
   position:absolute;
+  &.flip {
+    @include flip-it(0deg);
+  }
 
   &.vertical {
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
+    &.flip {
+      @include flip-it(90deg);
+    }
   }
 
   &.inverse {
     -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
     transform: rotate(180deg);
+    &.flip {
+      @include flip-it(180deg);
+    }
   }
 
   &.vinverse {
     -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
     transform: rotate(270deg);
+    &.flip {
+      @include flip-it(270deg);
+    }
   }
+
+
 }
 
 

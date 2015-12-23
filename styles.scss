@@ -2,25 +2,31 @@ $purple: purple;
 $blue: blue;
 
 
-@mixin block-template($color) {
-  .block {
-    width:200px;
-    height:100px;
-    background:$color;
-    margin-left:55px;
-
-    -webkit-transform: skew(-45deg);
+@mixin block-template($color, $height) {
+  &:before {
+    border-bottom: 150px solid $color;
+    border-left: 150px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
     position: absolute;
+    top: -150px;
+    width: 0;
+    width: 0;
+      height: 0;
+    text-indent: -9999px;
   }
 
-  .bottom {
-    background-color:$color;
-    width:200px;
-      height:100px;
-      -webkit-transform: skew(0);
-      position: absolute;
-      display:block;
-  }
+
+  background: $color;
+    display: inline-block;
+    height: $height;
+    margin-left: 20px;
+    margin-top: 150px;
+      position: relative;
+      width: 150px;
+
+
 }
 
 @mixin flip-it($rotate-degrees) {
@@ -39,8 +45,8 @@ $blue: blue;
 .container {
   border: 10px solid #8B4513;
   margin:25px;
-  height: 650px;
-  width: 650px;
+  height: 765px;
+  width: 765px;
 }
 
 
@@ -81,25 +87,25 @@ $blue: blue;
 
 
   .blue {
-      @include block-template($blue);
+      @include block-template($blue, 0px);
     }
 
   .purple {
-      @include block-template($purple);
+      @include block-template($purple, 150px);
 
   }
 
   .orange {
-      @include block-template(orange);
+      @include block-template(orange, 300px);
 
   }
 
   .red {
-      @include block-template(red);
+      @include block-template(red, 450px);
 
   }
 
   .green {
-      @include block-template(green);
+      @include block-template(green, 600px);
 
   }

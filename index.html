@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blocks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <body>
+    <div class="container">
+      <div class="block-group green"></div>
+      <div class="block-group blue"></div>
+      <div class="block-group green"></div>
+      <div class="block-group blue"></div>
+      <div class="block-group red"></div>
+      <div class="block-group green"></div>
+    </div>
+
+    <script>
+      $(".block-group").each(function(){
+          var $b = $(this);
+          $b.append($("<div />").addClass("bottom"));
+          $b.append($("<div />").addClass("block"));
+      })
+      $(".block-group").draggable().dblclick(function(){
+          var $b = $(this);
+
+          if($b.hasClass("vinverse")) {
+            $b.removeClass("vinverse");
+          } else if($b.hasClass("vertical")) {
+            $b.removeClass("vertical").addClass("inverse");
+          } else if($b.hasClass("inverse")) {
+            $b.removeClass("inverse").addClass("vinverse");
+          } else {
+            $b.addClass("vertical")
+          }
+
+      });
+    </script>
+  </body>
+
+</html>

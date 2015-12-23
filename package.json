@@ -1,0 +1,16 @@
+{
+  "name": "blocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass *.scss styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run sass\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.8.1",
+    "npm-watch": "0.0.2"
+  }
+}

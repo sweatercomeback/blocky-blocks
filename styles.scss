@@ -1,0 +1,81 @@
+$purple: purple;
+$blue: blue;
+
+
+@mixin block-template($color) {
+  .block {
+    width:200px;
+    height:100px;
+    background:$color;
+    margin-left:55px;
+
+    -webkit-transform: skew(-45deg);
+    position: absolute;
+  }
+
+  .bottom {
+    background-color:$color;
+    width:200px;
+      height:100px;
+      -webkit-transform: skew(0);
+      position: absolute;
+      display:block;
+  }
+}
+
+
+
+
+.container {
+  border: 10px solid #8B4513;
+  margin:25px;
+  height: 650px;
+  width: 650px;
+}
+
+
+
+.block-group {
+  position:absolute;
+
+  &.vertical {
+    -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    transform: rotate(90deg);
+  }
+
+  &.inverse {
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+  }
+
+  &.vinverse {
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+  }
+}
+
+
+
+  .blue {
+      @include block-template($blue);
+    }
+
+  .purple {
+      @include block-template($purple);
+
+  }
+
+  .orange {
+      @include block-template(orange);
+
+  }
+
+  .red {
+      @include block-template(red);
+
+  }
+
+  .green {
+      @include block-template(green);
+
+  }

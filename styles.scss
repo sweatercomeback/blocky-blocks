@@ -1,16 +1,17 @@
 $purple: purple;
 $blue: blue;
 
+$block-size: 100px;
 
 @mixin block-template($color, $height) {
   &:before {
-    border-bottom: 150px solid $color;
-    border-left: 150px solid transparent;
+    border-bottom: $block-size solid $color;
+    border-left: $block-size solid transparent;
     content: "";
     height: 0;
     left: 0;
     position: absolute;
-    top: -150px;
+    top: -$block-size;
     width: 0;
     width: 0;
       height: 0;
@@ -22,9 +23,9 @@ $blue: blue;
     display: inline-block;
     height: $height;
     margin-left: 20px;
-    margin-top: 150px;
+    margin-top: $block-size;
       position: relative;
-      width: 150px;
+      width: $block-size;
 
 
 }
@@ -45,8 +46,9 @@ $blue: blue;
 .container {
   border: 10px solid #8B4513;
   margin:25px;
-  height: 765px;
-  width: 765px;
+  height: 900px;
+  width: 900px;
+  padding: 7px;
 }
 
 
@@ -91,21 +93,21 @@ $blue: blue;
     }
 
   .purple {
-      @include block-template($purple, 150px);
+      @include block-template($purple, 100px);
 
   }
 
   .orange {
-      @include block-template(orange, 300px);
+      @include block-template(orange, 200px);
 
   }
 
   .red {
-      @include block-template(red, 450px);
+      @include block-template(red, 300px);
 
   }
 
   .green {
-      @include block-template(green, 600px);
+      @include block-template(green, 400px);
 
   }

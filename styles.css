@@ -1,8 +1,9 @@
 .container {
   border: 10px solid #8B4513;
   margin: 25px;
-  height: 765px;
-  width: 765px; }
+  height: 900px;
+  width: 900px;
+  padding: 7px; }
 
 .block-group {
   position: absolute; }
@@ -56,17 +57,17 @@
   display: inline-block;
   height: 0px;
   margin-left: 20px;
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
-  width: 150px; }
+  width: 100px; }
   .blue:before {
-    border-bottom: 150px solid blue;
-    border-left: 150px solid transparent;
+    border-bottom: 100px solid blue;
+    border-left: 100px solid transparent;
     content: "";
     height: 0;
     left: 0;
     position: absolute;
-    top: -150px;
+    top: -100px;
     width: 0;
     width: 0;
     height: 0;
@@ -75,19 +76,19 @@
 .purple {
   background: purple;
   display: inline-block;
-  height: 150px;
+  height: 100px;
   margin-left: 20px;
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
-  width: 150px; }
+  width: 100px; }
   .purple:before {
-    border-bottom: 150px solid purple;
-    border-left: 150px solid transparent;
+    border-bottom: 100px solid purple;
+    border-left: 100px solid transparent;
     content: "";
     height: 0;
     left: 0;
     position: absolute;
-    top: -150px;
+    top: -100px;
     width: 0;
     width: 0;
     height: 0;
@@ -96,19 +97,19 @@
 .orange {
   background: orange;
   display: inline-block;
-  height: 300px;
+  height: 200px;
   margin-left: 20px;
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
-  width: 150px; }
+  width: 100px; }
   .orange:before {
-    border-bottom: 150px solid orange;
-    border-left: 150px solid transparent;
+    border-bottom: 100px solid orange;
+    border-left: 100px solid transparent;
     content: "";
     height: 0;
     left: 0;
     position: absolute;
-    top: -150px;
+    top: -100px;
     width: 0;
     width: 0;
     height: 0;
@@ -117,19 +118,19 @@
 .red {
   background: red;
   display: inline-block;
-  height: 450px;
+  height: 300px;
   margin-left: 20px;
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
-  width: 150px; }
+  width: 100px; }
   .red:before {
-    border-bottom: 150px solid red;
-    border-left: 150px solid transparent;
+    border-bottom: 100px solid red;
+    border-left: 100px solid transparent;
     content: "";
     height: 0;
     left: 0;
     position: absolute;
-    top: -150px;
+    top: -100px;
     width: 0;
     width: 0;
     height: 0;
@@ -138,19 +139,19 @@
 .green {
   background: green;
   display: inline-block;
-  height: 600px;
+  height: 400px;
   margin-left: 20px;
-  margin-top: 150px;
+  margin-top: 100px;
   position: relative;
-  width: 150px; }
+  width: 100px; }
   .green:before {
-    border-bottom: 150px solid green;
-    border-left: 150px solid transparent;
+    border-bottom: 100px solid green;
+    border-left: 100px solid transparent;
     content: "";
     height: 0;
     left: 0;
     position: absolute;
-    top: -150px;
+    top: -100px;
     width: 0;
     width: 0;
     height: 0;
